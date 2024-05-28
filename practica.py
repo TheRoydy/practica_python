@@ -107,3 +107,29 @@ for fruta in frutas:
 
 for i in range(1, 6):
      print(i)
+
+print("-----------------AREA DE UN TRIANGULO---------------------")
+
+base = int(input("Ingrese la base del triangulo: "))
+
+altura = int(input("Ingrese la altura del triangulo: "))
+
+area = (base * altura) / 2
+print("El area del triangulo es: ", area)
+
+print("-----------------NUMERO PRIMO O NO---------------------")
+
+numero = int(input("Ingrese un numero entero positivo: "))
+es_primo = True
+
+if numero <= 1:
+     es_primo = False
+else:
+     for i in range(2, (numero // 2) + 1):
+         if numero % i == 0:
+             es_primo = False
+             break
+if es_primo:
+     print("El numero es primo")
+else:
+     print("El numero no es primo")
